@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1740F7141B8FC2B600114C52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F7131B8FC2B600114C52 /* main.m */; };
+		1740F7171B8FC2B600114C52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F7161B8FC2B600114C52 /* AppDelegate.m */; };
+		1740F71A1B8FC2B600114C52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F7191B8FC2B600114C52 /* ViewController.m */; };
+		1740F71D1B8FC2B600114C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1740F71B1B8FC2B600114C52 /* Main.storyboard */; };
+		1740F71F1B8FC2B600114C52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1740F71E1B8FC2B600114C52 /* Images.xcassets */; };
+		1740F7221B8FC2B600114C52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1740F7201B8FC2B600114C52 /* LaunchScreen.xib */; };
+		1740F72E1B8FC2B600114C52 /* Night_Sky_TutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F72D1B8FC2B600114C52 /* Night_Sky_TutorialTests.m */; };
+		1740F73C1B8FDEBC00114C52 /* JGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F73B1B8FDEBC00114C52 /* JGGradientView.m */; };
+		1740F73F1B8FE66600114C52 /* JGStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F73E1B8FE66600114C52 /* JGStarView.m */; };
+		1740F7431B8FF04D00114C52 /* JGGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F7421B8FF04D00114C52 /* JGGraphics.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1740F7281B8FC2B600114C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1740F7061B8FC2B600114C52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1740F70D1B8FC2B600114C52;
+			remoteInfo = "Night-Sky-Tutorial";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1740F70E1B8FC2B600114C52 /* Night-Sky-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Night-Sky-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1740F7121B8FC2B600114C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1740F7131B8FC2B600114C52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1740F7151B8FC2B600114C52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1740F7161B8FC2B600114C52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1740F7181B8FC2B600114C52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1740F7191B8FC2B600114C52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1740F71C1B8FC2B600114C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1740F71E1B8FC2B600114C52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1740F7211B8FC2B600114C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1740F7271B8FC2B600114C52 /* Night-Sky-TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Night-Sky-TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1740F72C1B8FC2B600114C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1740F72D1B8FC2B600114C52 /* Night_Sky_TutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Night_Sky_TutorialTests.m; sourceTree = "<group>"; };
+		1740F73A1B8FDEBC00114C52 /* JGGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGradientView.h; sourceTree = "<group>"; };
+		1740F73B1B8FDEBC00114C52 /* JGGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGradientView.m; sourceTree = "<group>"; };
+		1740F73D1B8FE66600114C52 /* JGStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGStarView.h; sourceTree = "<group>"; };
+		1740F73E1B8FE66600114C52 /* JGStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStarView.m; sourceTree = "<group>"; };
+		1740F7411B8FF04D00114C52 /* JGGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGraphics.h; sourceTree = "<group>"; };
+		1740F7421B8FF04D00114C52 /* JGGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGraphics.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1740F70B1B8FC2B600114C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1740F7241B8FC2B600114C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1740F7051B8FC2B600114C52 = {
+			isa = PBXGroup;
+			children = (
+				1740F7101B8FC2B600114C52 /* Night-Sky-Tutorial */,
+				1740F72A1B8FC2B600114C52 /* Night-Sky-TutorialTests */,
+				1740F70F1B8FC2B600114C52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1740F70F1B8FC2B600114C52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1740F70E1B8FC2B600114C52 /* Night-Sky-Tutorial.app */,
+				1740F7271B8FC2B600114C52 /* Night-Sky-TutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1740F7101B8FC2B600114C52 /* Night-Sky-Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				1740F71B1B8FC2B600114C52 /* Main.storyboard */,
+				1740F7381B8FC2E900114C52 /* View Controllers */,
+				1740F7391B8FDE3300114C52 /* Views */,
+				1740F7401B8FF03800114C52 /* Graphics */,
+				1740F7371B8FC2DB00114C52 /* App Delegate */,
+				1740F71E1B8FC2B600114C52 /* Images.xcassets */,
+				1740F7201B8FC2B600114C52 /* LaunchScreen.xib */,
+				1740F7111B8FC2B600114C52 /* Supporting Files */,
+			);
+			path = "Night-Sky-Tutorial";
+			sourceTree = "<group>";
+		};
+		1740F7111B8FC2B600114C52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1740F7121B8FC2B600114C52 /* Info.plist */,
+				1740F7131B8FC2B600114C52 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1740F72A1B8FC2B600114C52 /* Night-Sky-TutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				1740F72D1B8FC2B600114C52 /* Night_Sky_TutorialTests.m */,
+				1740F72B1B8FC2B600114C52 /* Supporting Files */,
+			);
+			path = "Night-Sky-TutorialTests";
+			sourceTree = "<group>";
+		};
+		1740F72B1B8FC2B600114C52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1740F72C1B8FC2B600114C52 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1740F7371B8FC2DB00114C52 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1740F7151B8FC2B600114C52 /* AppDelegate.h */,
+				1740F7161B8FC2B600114C52 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		1740F7381B8FC2E900114C52 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1740F7181B8FC2B600114C52 /* ViewController.h */,
+				1740F7191B8FC2B600114C52 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1740F7391B8FDE3300114C52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1740F73A1B8FDEBC00114C52 /* JGGradientView.h */,
+				1740F73B1B8FDEBC00114C52 /* JGGradientView.m */,
+				1740F73D1B8FE66600114C52 /* JGStarView.h */,
+				1740F73E1B8FE66600114C52 /* JGStarView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1740F7401B8FF03800114C52 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				1740F7411B8FF04D00114C52 /* JGGraphics.h */,
+				1740F7421B8FF04D00114C52 /* JGGraphics.m */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1740F70D1B8FC2B600114C52 /* Night-Sky-Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1740F7311B8FC2B600114C52 /* Build configuration list for PBXNativeTarget "Night-Sky-Tutorial" */;
+			buildPhases = (
+				1740F70A1B8FC2B600114C52 /* Sources */,
+				1740F70B1B8FC2B600114C52 /* Frameworks */,
+				1740F70C1B8FC2B600114C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Night-Sky-Tutorial";
+			productName = "Night-Sky-Tutorial";
+			productReference = 1740F70E1B8FC2B600114C52 /* Night-Sky-Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1740F7261B8FC2B600114C52 /* Night-Sky-TutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1740F7341B8FC2B600114C52 /* Build configuration list for PBXNativeTarget "Night-Sky-TutorialTests" */;
+			buildPhases = (
+				1740F7231B8FC2B600114C52 /* Sources */,
+				1740F7241B8FC2B600114C52 /* Frameworks */,
+				1740F7251B8FC2B600114C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1740F7291B8FC2B600114C52 /* PBXTargetDependency */,
+			);
+			name = "Night-Sky-TutorialTests";
+			productName = "Night-Sky-TutorialTests";
+			productReference = 1740F7271B8FC2B600114C52 /* Night-Sky-TutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1740F7061B8FC2B600114C52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Jordan Guggenheim";
+				TargetAttributes = {
+					1740F70D1B8FC2B600114C52 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					1740F7261B8FC2B600114C52 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 1740F70D1B8FC2B600114C52;
+					};
+				};
+			};
+			buildConfigurationList = 1740F7091B8FC2B600114C52 /* Build configuration list for PBXProject "Night-Sky-Tutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1740F7051B8FC2B600114C52;
+			productRefGroup = 1740F70F1B8FC2B600114C52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1740F70D1B8FC2B600114C52 /* Night-Sky-Tutorial */,
+				1740F7261B8FC2B600114C52 /* Night-Sky-TutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1740F70C1B8FC2B600114C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1740F71D1B8FC2B600114C52 /* Main.storyboard in Resources */,
+				1740F7221B8FC2B600114C52 /* LaunchScreen.xib in Resources */,
+				1740F71F1B8FC2B600114C52 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1740F7251B8FC2B600114C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1740F70A1B8FC2B600114C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1740F71A1B8FC2B600114C52 /* ViewController.m in Sources */,
+				1740F7431B8FF04D00114C52 /* JGGraphics.m in Sources */,
+				1740F73C1B8FDEBC00114C52 /* JGGradientView.m in Sources */,
+				1740F7171B8FC2B600114C52 /* AppDelegate.m in Sources */,
+				1740F73F1B8FE66600114C52 /* JGStarView.m in Sources */,
+				1740F7141B8FC2B600114C52 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1740F7231B8FC2B600114C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1740F72E1B8FC2B600114C52 /* Night_Sky_TutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1740F7291B8FC2B600114C52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1740F70D1B8FC2B600114C52 /* Night-Sky-Tutorial */;
+			targetProxy = 1740F7281B8FC2B600114C52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1740F71B1B8FC2B600114C52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1740F71C1B8FC2B600114C52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1740F7201B8FC2B600114C52 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1740F7211B8FC2B600114C52 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1740F72F1B8FC2B600114C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1740F7301B8FC2B600114C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1740F7321B8FC2B600114C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Night-Sky-Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1740F7331B8FC2B600114C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Night-Sky-Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1740F7351B8FC2B600114C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Night-Sky-TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Night-Sky-Tutorial.app/Night-Sky-Tutorial";
+			};
+			name = Debug;
+		};
+		1740F7361B8FC2B600114C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Night-Sky-TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Night-Sky-Tutorial.app/Night-Sky-Tutorial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1740F7091B8FC2B600114C52 /* Build configuration list for PBXProject "Night-Sky-Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1740F72F1B8FC2B600114C52 /* Debug */,
+				1740F7301B8FC2B600114C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1740F7311B8FC2B600114C52 /* Build configuration list for PBXNativeTarget "Night-Sky-Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1740F7321B8FC2B600114C52 /* Debug */,
+				1740F7331B8FC2B600114C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1740F7341B8FC2B600114C52 /* Build configuration list for PBXNativeTarget "Night-Sky-TutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1740F7351B8FC2B600114C52 /* Debug */,
+				1740F7361B8FC2B600114C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1740F7061B8FC2B600114C52 /* Project object */;
+}

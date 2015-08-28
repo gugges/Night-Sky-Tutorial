@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J69-Yn-IJg" customClass="JGGradientView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7B-7Z-azI" customClass="JGStarView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="AuJ-xx-0Se"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.35000000000000003" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milky-Way" translatesAutoresizingMaskIntoConstraints="NO" id="kg4-Nz-98c" userLabel="Milky Way">
+                                <rect key="frame" x="-19" y="-40" width="413" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kg4-Nz-98c" secondAttribute="height" multiplier="473:300" id="Ghz-wh-i6n"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L7B-7Z-azI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="34f-7i-a3g"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="J69-Yn-IJg" secondAttribute="bottom" id="6Lg-Dc-0mV"/>
+                            <constraint firstItem="J69-Yn-IJg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="F0m-F7-YSC"/>
+                            <constraint firstAttribute="trailing" secondItem="J69-Yn-IJg" secondAttribute="trailing" id="Kmi-zr-rqU"/>
+                            <constraint firstItem="L7B-7Z-azI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="top" id="NGq-5u-dnD"/>
+                            <constraint firstItem="L7B-7Z-azI" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailing" id="Wyl-qu-Q0V"/>
+                            <constraint firstItem="J69-Yn-IJg" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Xcg-me-6EZ"/>
+                            <constraint firstItem="kg4-Nz-98c" firstAttribute="top" secondItem="L7B-7Z-azI" secondAttribute="top" constant="-60" id="b6V-dY-u0g"/>
+                            <constraint firstItem="kg4-Nz-98c" firstAttribute="centerX" secondItem="L7B-7Z-azI" secondAttribute="centerX" id="dZc-IY-2yY"/>
+                            <constraint firstItem="kg4-Nz-98c" firstAttribute="width" secondItem="L7B-7Z-azI" secondAttribute="width" multiplier="1.1" id="rxb-Ra-uFh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207.5" y="444.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Milky-Way" width="1626" height="883"/>
+    </resources>
+</document>
