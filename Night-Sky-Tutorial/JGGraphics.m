@@ -33,7 +33,7 @@
     CGColorSpaceRelease(colorSpace);
 }
 
-+ (void)drawBiggerStarWithFrame: (CGRect)frame starColor: (UIColor*)starColor rotation: (CGFloat)rotation
++ (void)drawExtraLargeStarWithFrame: (CGRect)frame starColor: (UIColor*)starColor rotation: (CGFloat)rotation
 {
     //// General Declarations
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -61,7 +61,7 @@
     CGContextRestoreGState(context);
 }
 
-+ (void)drawBigStarWithFrame: (CGRect)frame starColor: (UIColor*)starColor rotation: (CGFloat)rotation
++ (void)drawLargeStarWithFrame: (CGRect)frame starColor: (UIColor*)starColor rotation: (CGFloat)rotation
 {
     //// General Declarations
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -119,7 +119,7 @@
     CGContextRestoreGState(context);
 }
 
-+ (void)drawLittleStarWithFrame: (CGRect)frame starColor: (UIColor*)starColor rotation: (CGFloat)rotation
++ (void)drawExtraSmallStarWithFrame: (CGRect)frame starColor: (UIColor*)starColor rotation: (CGFloat)rotation
 {
     //// General Declarations
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -154,6 +154,5 @@
     
     CGContextRestoreGState(context);
 }
-
 
 @end

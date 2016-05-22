@@ -1,29 +1,30 @@
 
-#import "JGStarView.h"
+#import "JGStarFieldView.h"
 #import "JGGraphics.h"
 
-@interface JGStarView ()
+@interface JGStarFieldView ()
 
-@property (nonatomic, strong) NSMutableArray *starFrames;
+@property (nonatomic, strong) NSMutableArray *starFrameValues;
 
 @end
 
-@implementation JGStarView
+@implementation JGStarFieldView
 
-- (void)drawRect:(CGRect)rect {
-    
-    if (self.starFrames != nil) {
-        [self.starFrames removeAllObjects];
+- (void)drawRect:(CGRect)rect
+{
+    if (self.starFrameValues.count > 0) {
+        [self.starFrameValues removeAllObjects];
     }
     
-    self.starFrames = [[NSMutableArray alloc] init];
+    self.starFrameValues = [[NSMutableArray alloc] init];
     
     [self drawBigStars];
     [self drawLittleStars];
 }
 
 
-- (void) drawBigStars {
+- (void)drawBigStars
+{
     CGFloat xAxis = 0;
     CGFloat yAxis = 25;
     CGFloat starFrameWidth = 22;
@@ -58,13 +59,14 @@
             }
             
             // Y axis move at least 30pts to prevent overlap + 10 random for staggering.
-            yAxis += arc4random_uniform(10)+30;
+            yAxis += arc4random_uniform(10) + 30;
             
             starFrame = CGRectMake(xAxis, yAxis, starFrameWidth, starFrameWidth);
             
             rowCount++;
             
-            // If y moves past frame, reset y.
+            // If y moves past the bottom edge of the frame
+            // then reset y and keep drawing stars from the top on down.
             if (yAxis > self.frame.size.height) {
                 yAxis = 0;
                 alpha = 1;
@@ -73,20 +75,20 @@
         
         // If star is not running off the screen, assign new X and Y coordinates.  X can move an extra 10pts.  Y is range bound +/- 10pts.
         else {
-            starFrame = CGRectMake(xAxis+arc4random_uniform(10), yAxis+arc4random_uniform(20)-10, starFrameWidth, starFrameWidth);
+            starFrame = CGRectMake(xAxis + arc4random_uniform(10), yAxis + arc4random_uniform(20) - 10, starFrameWidth, starFrameWidth);
             
             // Move x for next star.
-            xAxis += arc4random_uniform(20)+60;
+            xAxis += arc4random_uniform(20) + 60;
         }
         
-        // If the new star's frame doesn't overlap another star then draw it.  Bigger stars are biased toward the top rows.  The modulo ensures that it only draws stars at certain iterations in the for loop to prevent drawing too many stars.
-        if (![self starIntersects:starFrame]) {
+        // If the new star's frame doesn't overlap another star then draw it.  Larger stars are biased toward the top rows.  The modulo ensures that it only draws stars at certain iterations in the for loop to prevent drawing too many stars.
+        if ([self shouldDrawStarWithRect:starFrame]) {
             
             if (i % 2 == 0 && rowCount < 1) {
-                [JGGraphics drawBiggerStarWithFrame:starFrame starColor:starColor rotation:rotation];
+                [JGGraphics drawExtraLargeStarWithFrame:starFrame starColor:starColor rotation:rotation];
                 
             } else if (rowCount < 4 && i % 2) {
-                [JGGraphics drawBigStarWithFrame:starFrame starColor:starColor rotation:rotation];
+                [JGGraphics drawLargeStarWithFrame:starFrame starColor:starColor rotation:rotation];
                 
             } else if (rowCount >= 1 && rowCount < 3 && i % 5) {
                 [JGGraphics drawMediumStarWithFrame:starFrame starColor:starColor rotation:rotation];
@@ -100,12 +102,13 @@
             }
             
             // Add star frame to array to prevent overlapping stars.
-            [self.starFrames addObject:[NSValue valueWithCGRect:starFrame]];
+            [self.starFrameValues addObject:[NSValue valueWithCGRect:starFrame]];
         }
     }
 }
 
-- (void) drawLittleStars {
+- (void)drawLittleStars
+{
     CGFloat xAxis = 0;
     CGFloat xAxisPadding = 10;
     CGFloat yAxis = -10;
@@ -128,7 +131,7 @@
         if (maxX+xAxisPadding >= self.frame.size.width) {
             
             // Randomize starting coordinates
-            xAxis = arc4random_uniform(15)+5;
+            xAxis = arc4random_uniform(15) + 5;
             yAxis += arc4random_uniform(30);
             
             starFrame = CGRectMake(xAxis, yAxis, starWidth, starWidth);
@@ -142,34 +145,34 @@
             }
             
             // Increase speed of alpha reduction for bottom rows
-            else if (yAxis > 200){
-                alpha *=.9;
+            else if (yAxis > 200) {
+                alpha *= .9;
             }
             
             // If star is not running off the screen, assign new X and Y coordinates.  X and Y are range bound +20pts /-10pts.
         } else {
-            starFrame = CGRectMake(xAxis+arc4random_uniform(30)-10, yAxis+arc4random_uniform(30)-10, starWidth, starWidth);
+            starFrame = CGRectMake(xAxis + arc4random_uniform(30) - 10, yAxis + arc4random_uniform(30) - 10, starWidth, starWidth);
             
             // Move x for the next star.
             xAxis += 2 * starWidth + xAxisPadding * 2;
         }
         
-        // Little stars can intersect, so no validation for CGRect.
-        [JGGraphics drawLittleStarWithFrame:starFrame starColor:starColor rotation:rotation];
+        // Small stars can intersect, so no validation needed for CGRect.
+        [JGGraphics drawExtraSmallStarWithFrame:starFrame starColor:starColor rotation:rotation];
     }
 }
 
-- (BOOL) starIntersects:(CGRect)rect{
-    
-    for (NSValue *values in self.starFrames) {
+- (BOOL)shouldDrawStarWithRect:(CGRect)rect
+{
+    for (NSValue *values in self.starFrameValues) {
         
         CGRect oldRect = values.CGRectValue;
         
         if (CGRectIntersectsRect(oldRect, rect)) {
-            return YES;
+            return NO;
         }
     }
-    return NO;
+    return YES;
 }
 
 @end

@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		1740F7141B8FC2B600114C52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F7131B8FC2B600114C52 /* main.m */; };
 		1740F7171B8FC2B600114C52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F7161B8FC2B600114C52 /* AppDelegate.m */; };
-		1740F71A1B8FC2B600114C52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F7191B8FC2B600114C52 /* ViewController.m */; };
 		1740F71D1B8FC2B600114C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1740F71B1B8FC2B600114C52 /* Main.storyboard */; };
 		1740F71F1B8FC2B600114C52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1740F71E1B8FC2B600114C52 /* Images.xcassets */; };
 		1740F7221B8FC2B600114C52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1740F7201B8FC2B600114C52 /* LaunchScreen.xib */; };
 		1740F72E1B8FC2B600114C52 /* Night_Sky_TutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F72D1B8FC2B600114C52 /* Night_Sky_TutorialTests.m */; };
-		1740F73C1B8FDEBC00114C52 /* JGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F73B1B8FDEBC00114C52 /* JGGradientView.m */; };
-		1740F73F1B8FE66600114C52 /* JGStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F73E1B8FE66600114C52 /* JGStarView.m */; };
+		1740F73C1B8FDEBC00114C52 /* JGNightGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F73B1B8FDEBC00114C52 /* JGNightGradientView.m */; };
+		1740F73F1B8FE66600114C52 /* JGStarFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F73E1B8FE66600114C52 /* JGStarFieldView.m */; };
 		1740F7431B8FF04D00114C52 /* JGGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740F7421B8FF04D00114C52 /* JGGraphics.m */; };
 /* End PBXBuildFile section */
 
@@ -35,18 +34,16 @@
 		1740F7131B8FC2B600114C52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1740F7151B8FC2B600114C52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1740F7161B8FC2B600114C52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1740F7181B8FC2B600114C52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1740F7191B8FC2B600114C52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1740F71C1B8FC2B600114C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1740F71E1B8FC2B600114C52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1740F7211B8FC2B600114C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1740F7271B8FC2B600114C52 /* Night-Sky-TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Night-Sky-TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1740F72C1B8FC2B600114C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1740F72D1B8FC2B600114C52 /* Night_Sky_TutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Night_Sky_TutorialTests.m; sourceTree = "<group>"; };
-		1740F73A1B8FDEBC00114C52 /* JGGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGradientView.h; sourceTree = "<group>"; };
-		1740F73B1B8FDEBC00114C52 /* JGGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGradientView.m; sourceTree = "<group>"; };
-		1740F73D1B8FE66600114C52 /* JGStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGStarView.h; sourceTree = "<group>"; };
-		1740F73E1B8FE66600114C52 /* JGStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStarView.m; sourceTree = "<group>"; };
+		1740F73A1B8FDEBC00114C52 /* JGNightGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGNightGradientView.h; sourceTree = "<group>"; };
+		1740F73B1B8FDEBC00114C52 /* JGNightGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGNightGradientView.m; sourceTree = "<group>"; };
+		1740F73D1B8FE66600114C52 /* JGStarFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGStarFieldView.h; sourceTree = "<group>"; };
+		1740F73E1B8FE66600114C52 /* JGStarFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGStarFieldView.m; sourceTree = "<group>"; };
 		1740F7411B8FF04D00114C52 /* JGGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGraphics.h; sourceTree = "<group>"; };
 		1740F7421B8FF04D00114C52 /* JGGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGraphics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,13 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				1740F71B1B8FC2B600114C52 /* Main.storyboard */,
-				1740F7381B8FC2E900114C52 /* View Controllers */,
-				1740F7391B8FDE3300114C52 /* Views */,
-				1740F7401B8FF03800114C52 /* Graphics */,
 				1740F7371B8FC2DB00114C52 /* App Delegate */,
-				1740F71E1B8FC2B600114C52 /* Images.xcassets */,
-				1740F7201B8FC2B600114C52 /* LaunchScreen.xib */,
+				1740F7401B8FF03800114C52 /* Graphics */,
+				1740F7391B8FDE3300114C52 /* Views */,
 				1740F7111B8FC2B600114C52 /* Supporting Files */,
+				1740F71E1B8FC2B600114C52 /* Images.xcassets */,
 			);
 			path = "Night-Sky-Tutorial";
 			sourceTree = "<group>";
@@ -105,6 +100,7 @@
 		1740F7111B8FC2B600114C52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1740F7201B8FC2B600114C52 /* LaunchScreen.xib */,
 				1740F7121B8FC2B600114C52 /* Info.plist */,
 				1740F7131B8FC2B600114C52 /* main.m */,
 			);
@@ -137,22 +133,13 @@
 			name = "App Delegate";
 			sourceTree = "<group>";
 		};
-		1740F7381B8FC2E900114C52 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				1740F7181B8FC2B600114C52 /* ViewController.h */,
-				1740F7191B8FC2B600114C52 /* ViewController.m */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
 		1740F7391B8FDE3300114C52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1740F73A1B8FDEBC00114C52 /* JGGradientView.h */,
-				1740F73B1B8FDEBC00114C52 /* JGGradientView.m */,
-				1740F73D1B8FE66600114C52 /* JGStarView.h */,
-				1740F73E1B8FE66600114C52 /* JGStarView.m */,
+				1740F73A1B8FDEBC00114C52 /* JGNightGradientView.h */,
+				1740F73B1B8FDEBC00114C52 /* JGNightGradientView.m */,
+				1740F73D1B8FE66600114C52 /* JGStarFieldView.h */,
+				1740F73E1B8FE66600114C52 /* JGStarFieldView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -266,11 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1740F71A1B8FC2B600114C52 /* ViewController.m in Sources */,
 				1740F7431B8FF04D00114C52 /* JGGraphics.m in Sources */,
-				1740F73C1B8FDEBC00114C52 /* JGGradientView.m in Sources */,
+				1740F73C1B8FDEBC00114C52 /* JGNightGradientView.m in Sources */,
 				1740F7171B8FC2B600114C52 /* AppDelegate.m in Sources */,
-				1740F73F1B8FE66600114C52 /* JGStarView.m in Sources */,
+				1740F73F1B8FE66600114C52 /* JGStarFieldView.m in Sources */,
 				1740F7141B8FC2B600114C52 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +452,7 @@
 				1740F7331B8FC2B600114C52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1740F7341B8FC2B600114C52 /* Build configuration list for PBXNativeTarget "Night-Sky-TutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +461,7 @@
 				1740F7361B8FC2B600114C52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

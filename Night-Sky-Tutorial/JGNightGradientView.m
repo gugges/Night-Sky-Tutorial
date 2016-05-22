@@ -1,10 +1,11 @@
 
-#import "JGGradientView.h"
+#import "JGNightGradientView.h"
 #import "JGGraphics.h"
 
-@implementation JGGradientView
+@implementation JGNightGradientView
 
-- (void)drawRect:(CGRect)rect {
+- (void)drawRect:(CGRect)rect
+{
     [JGGraphics drawNightGradientWithCanvasSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
 }
 
